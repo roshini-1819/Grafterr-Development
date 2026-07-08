@@ -1,0 +1,30 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  max-width: 420px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: var(--brand-orange);
+  background: color-mix(in srgb, var(--brand-orange) 12%, #fff);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.message {
+  color: var(--color-body);
+  margin-bottom: var(--space-2);
+}

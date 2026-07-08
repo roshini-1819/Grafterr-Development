@@ -1,0 +1,83 @@
+
+
+:root {
+  /* Brand gradient (hero headline, CTA, accents)  */
+  --brand-blue: #5895f0;
+  --brand-orange: #f1b662;
+  --gradient-brand: linear-gradient(90deg, #5895f0 0%, #f1b662 100%);
+  --gradient-brand-diagonal: linear-gradient(135deg, #5895f0 0%, #f1b662 100%);
+
+  /* ---- Decorative accents ---- */
+  --accent-teal: #2dd4bf;
+  --accent-coral: #fb7185;
+
+  /* ---- Neutrals ---- */
+  --color-ink: #1a1a1a; /* headings (Figma #1A1A1A) */
+  --color-body: #475569; /* paragraph text */
+  --color-muted: #94a3b8; /* subtle text */
+  --color-line: #e2e8f0; /* dividers / borders */
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8fafc;
+  --color-skeleton: #e9eef5;
+  --color-skeleton-sheen: #f4f7fb;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+
+  --fs-hero: clamp(2.5rem, 1.4rem + 5vw, 4.6875rem); /* 40 → 75px (Figma) */
+  --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3rem); /* 32 → 48px */
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.4vw, 1.25rem); /* 17 → 20px */
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.8125rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extra: 800;
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.6;
+
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;
+  --container-pad: clamp(1.25rem, 0.5rem + 3vw, 2.5rem);
+  --section-pad-y: clamp(3.5rem, 2rem + 6vw, 7rem);
+
+  /* ---- Radii ---- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 30px -12px rgba(15, 23, 42, 0.18);
+  --shadow-lg: 0 30px 60px -24px rgba(15, 23, 42, 0.28);
+  --shadow-brand: 0 16px 34px -12px rgba(59, 130, 246, 0.5);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-med: 300ms; /* carousel slide */
+  --dur-slow: 600ms; /* content fade-in */
+
+  /* ---- Z-index ---- */
+  --z-shape: 1;
+  --z-content: 2;
+  --z-nav: 50;
+}

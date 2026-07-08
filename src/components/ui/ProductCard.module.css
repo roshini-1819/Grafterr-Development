@@ -1,0 +1,64 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 592 / 709;
+  min-height: 420px;
+  background: #fafafa;
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--dur-med) var(--ease-out),
+    box-shadow var(--dur-med) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+
+.name {
+  position: relative;
+  z-index: 1;
+  font-family: 'Urbanist', var(--font-sans);
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.125rem); /* → 34px */
+  font-weight: var(--fw-bold); /* 700 */
+  line-height: 1.294; /* 44 / 34 */
+  letter-spacing: -1px;
+  color: #000000;
+  padding: 39px 35px 0;
+}
+
+
+.media {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.image {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 14px 22px rgba(15, 23, 42, 0.12));
+  transition: transform var(--dur-med) var(--ease-out);
+  transform-origin: center top;
+}
+
+.card:hover .image {
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card:hover,
+  .image,
+  .card:hover .image {
+    transform: none;
+  }
+}

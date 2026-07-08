@@ -1,0 +1,18 @@
+.centered {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+}
+
+.footer {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.footerText {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: var(--fs-small);
+}

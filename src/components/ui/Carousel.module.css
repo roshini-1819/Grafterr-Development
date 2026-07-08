@@ -1,0 +1,87 @@
+.carousel {
+  --gap: 35px; /* Figma: 35px between cards */
+  position: relative;
+}
+
+
+.progress {
+  position: relative;
+  width: 319px;
+  max-width: 100%;
+  height: 4px;
+  margin: 0 auto var(--space-8);
+  border-radius: 8px;
+  background: var(--color-line);
+  overflow: hidden;
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  width: var(--fill-w);
+  transform: translateX(var(--fill-shift));
+  border-radius: 8px;
+  background: #1a1a1a;
+  transition: transform var(--dur-med) var(--ease-out),
+    width var(--dur-med) var(--ease-out);
+}
+
+.viewport {
+  overflow: hidden;
+  padding: var(--space-2);
+  margin: calc(var(--space-2) * -1);
+  touch-action: pan-y; 
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  transform: translateX(calc(var(--offset) * -1));
+  transition: transform var(--dur-med) var(--ease-out);
+}
+
+.dragging {
+  transition: none;
+}
+
+.slide {
+  flex: 0 0
+    calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view));
+  min-width: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 44px; 
+  margin-top: var(--space-7);
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: var(--color-body);
+  background: #dddddd;
+  border: 1px solid #dddddd;
+  transition: transform var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    background var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    opacity var(--dur-fast) var(--ease-out);
+}
+
+.arrow:hover:not(:disabled) {
+  transform: scale(1.06);
+  color: #fff;
+  background-image: var(--gradient-brand);
+  border-color: transparent;
+  box-shadow: var(--shadow-md);
+}
+
+.arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

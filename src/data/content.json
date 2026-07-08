@@ -1,0 +1,80 @@
+{
+  "navigation": {
+    "logo": {
+      "src": "/images/logo.svg",
+      "alt": "Grafterr logo"
+    },
+    "links": [
+      { "label": "Products", "href": "#products" },
+      { "label": "Solutions", "href": "#solutions" }
+    ],
+    "cta": {
+      "label": "Book a demo",
+      "href": "#demo"
+    }
+  },
+  "hero": {
+    "headlinePrefix": "Looking for a new",
+    "headlineGradient": "technology provider?",
+    "subheadline": {
+      "prefix": "Explore our ",
+      "emphasis": "success stories",
+      "suffix": " to see how businesses like yours have transformed with Grafterr's technology."
+    },
+    "cta": {
+      "label": "Learn more",
+      "href": "#success-stories"
+    }
+  },
+  "featuresSection": {
+    "titlePrefix": "More ways",
+    "titleAccent": "Grafterr",
+    "titleSuffix": "can help you grow your business",
+    "subtitle": "An award-winning, end-to-end restaurant technology & payments platform, designed to streamline food service and automate complex venue operations",
+    "shapes": [
+      { "type": "circle", "color": "teal", "size": 22, "top": "6%", "left": "16%", "delay": 0 },
+      { "type": "rectangle", "color": "coral", "size": 26, "top": "10%", "right": "17%", "delay": 0.8 }
+    ],
+    "products": [
+      {
+        "id": "point-of-sale",
+        "name": "Point of sale",
+        "image": "/images/product-pos.png"
+      },
+      {
+        "id": "self-service",
+        "name": "Self-service",
+        "image": "/images/product-kiosk.png"
+      },
+      {
+        "id": "kitchen-management",
+        "name": "Kitchen management",
+        "image": "/images/product-kitchen.png"
+      },
+      {
+        "id": "online-ordering",
+        "name": "Online ordering",
+        "image": "/images/product-kiosk.png"
+      },
+      {
+        "id": "payments",
+        "name": "Payments",
+        "image": "/images/product-pos.png"
+      },
+      {
+        "id": "kitchen-display",
+        "name": "Kitchen display",
+        "image": "/images/product-kitchen.png"
+      }
+    ]
+  },
+  "carousel": {
+    "itemsPerView": { "mobile": 1, "tablet": 2, "desktop": 3 },
+    "showArrows": true,
+    "disableAtBoundaries": true,
+    "labels": {
+      "prev": "Previous product",
+      "next": "Next product"
+    }
+  }
+}
